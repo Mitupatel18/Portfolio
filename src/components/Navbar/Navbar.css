@@ -1,0 +1,140 @@
+nav{
+    width: 100%;
+    padding: 20px 0;
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Ubuntu', sans-serif;
+    background: #ffffff;
+}
+nav.sticky{
+    position: sticky;
+    top: 0;
+    background: #4070f4;
+    padding: 15px 0;
+}
+nav .navbar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+nav .navbar .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: #4070f4;
+}
+nav.sticky .navbar .logo a{
+    color: #fff;
+}
+nav .navbar .menu{
+    display: flex;
+    position: relative;
+}
+nav .navbar .menu li{
+    list-style: none;
+    margin: 0 8px;
+    padding-right: 35px;
+}
+.navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color: #0E2431;
+    padding: 6px 0;
+    transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+    color: #6435d0;
+}
+nav.sticky .menu a{
+    color: #FFF;
+}
+nav.sticky .menu a:hover{
+    color: #0E2431;
+}
+.navbar .media-icons a{
+    color: #363637;
+    font-size: 18px;
+    margin: 0 6px;
+}
+nav.sticky .media-icons a{
+    color: #FFF;
+}
+
+/* Scroll TO Top Button CSS */
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #4070f4;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* Side Navigation Menu Button CSS */
+nav .menu-btn,
+nav .cancel-btn{
+    position: absolute;
+    color: #4070f4;
+    right: 30px;
+    top: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+nav.sticky .menu-btn,
+nav.sticky .cancel-btn {
+    color: #FFF;
+    top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav .navbar .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    nav .navbar .menu.active {
+        display: flex;
+    }
+    nav.sticky .navbar .menu {
+        background-color: #4070f4;
+    }
+    nav .navbar .menu li {
+        padding: 15px;
+        text-align: center;
+    }
+    nav .menu-btn {
+        display: block;
+    }
+    nav .cancel-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    nav .navbar {
+        width: 100%;
+        padding: 10px;
+    }
+    nav .navbar .logo a {
+        font-size: 28px;
+    }
+    .menu-btn {
+        font-size: 24px;
+    }
+    .scroll-button a {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}

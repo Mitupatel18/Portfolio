@@ -1,0 +1,83 @@
+.projects .boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.projects .boxes .box{
+  position: relative;
+  margin: 20px 0;
+  width: calc(100% / 3 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  cursor: default;
+  transition: all 0.4s ease;
+}
+.projects .boxes .box:hover{
+  background: #4070f4;
+  color: #fff;
+}
+.projects .boxes .box .icon{
+  height: 50px;
+  width: 50px;
+  background: #4070f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+.boxes .box:hover .icon{
+  background-color: #fff;
+  color: #4070f4;
+}
+.projects .boxes .topic,
+.projects .boxes p {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p{
+  color: #fff;
+}
+
+.projects .boxes .box a{
+  position: absolute;
+  bottom: 18px;
+  translate: -50%;
+  padding: 10px 20px;
+  background-color: #64b8ed;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+@media (max-width: 1120px)  {
+  .projects .boxes{
+    row-gap: 10px;
+    column-gap: 40px;
+  }
+  .projects .boxes .box{
+    width: calc(100% / 2 - 20px);
+  }  
+}
+
+@media (max-width: 750px) {
+  .projects .boxes{
+    gap: 10px;
+  }
+  .projects .boxes .box{
+    width: calc(100% / 1 - 20px);
+  }  
+}
+
+@media (max-width: 500px){
+  
+}

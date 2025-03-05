@@ -1,0 +1,111 @@
+#contact {
+  padding: 40px 0;
+  text-align: center;
+  background-position: center;
+
+}
+
+.contact .title {
+  margin-bottom: 70px;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto 0;
+  background-color: #e4f6ffcc; /* Add a semi-transparent background color to improve readability */
+  padding: 30px 0;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Outfit";
+}
+
+input,
+textarea {
+  outline: none;
+  width: 40%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: 'Ubuntu';
+  letter-spacing: 1px;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid #6e81ec;
+}
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #64b8ed;
+  color: #3d3c3c;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; 
+}
+.error {
+  color: #e23d56;
+  font-family: "Outfit";
+}
+.btn{
+  display: flex;
+  margin: auto;
+  border-radius: 25px;
+  font-family: "Outfit";
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: #2fa1f8;
+}
+
+
+@media (max-width: 750px){
+  input,
+  textarea {
+    width: 55%;
+  }
+}
+@media (max-width: 500px){
+  input,
+  textarea {
+    width: 75%;
+  }
+}
+
+
+
+
+.swal2-container {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+.swal2-styled {
+  background-color: #2fa1f8;
+}
+.swal2-styled:hover {
+  background-color: #2a86f0;
+}
+
+
+
