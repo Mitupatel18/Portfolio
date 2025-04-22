@@ -1,6 +1,6 @@
 import "./About.css"
 import pic from "../../assets/mit.jpg"
-import resume from "../../assets/Resume.pdf"
+import resume from "../../assets/Resume__Mit_amipara.pdf"
 
 function About() {
     return ( 
