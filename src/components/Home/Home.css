@@ -1,6 +1,6 @@
 /* home section styling */
 .home{
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   font-family: 'Ubuntu', sans-serif;
 }
@@ -73,13 +73,13 @@
 
 @media (max-width: 900px) {
   .home {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
 @media (max-width: 750px) {
   .home {
-    height: 90vh;
+    min-height: 90vh;
   }
   .home .text-one {
     font-size: 35px;
