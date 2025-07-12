@@ -2,6 +2,9 @@ import html from "../../assets/HTML5.png";
 import css from "../../assets/CSS3.png";
 import js from "../../assets/JS.png";
 import react from "../../assets/React.png";
+import node from "../../assets/Node.png";
+import express from "../../assets/Express.png";
+import mongodb from "../../assets/Mongodb.png";
 import "./Skills.css"
 
 function Skills() {
@@ -25,6 +28,18 @@ function Skills() {
                 <div className="box">
                     <img src={react} alt="logo" />
                     <span className="lag">React Js</span>
+                </div>
+                <div className="box">
+                    <img src={node} alt="logo" />
+                    <span className="lag">Node Js</span>
+                </div>
+                <div className="box">
+                    <img src={express} alt="logo" />
+                    <span className="lag">Express Js</span>
+                </div>
+                <div className="box">
+                    <img src={mongodb} alt="logo" />
+                    <span className="lag">Mongo DB</span>
                 </div>
             </div>
             </div>

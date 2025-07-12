@@ -10,7 +10,7 @@ function Home() {
                 <div className="text">
                     <div className="text-one">Hello,</div>
                     <div className="text-two">I&apos;m Mit Amipara</div>
-                    <div className="text-three">Frontend Developer</div>
+                    <div className="text-three">Fullstack Developer</div>
                     <div className="button">
                         <a style={{'--color-':'#000000'}} href="https://github.com/Mitupatel18" target="_blank"><FaSquareGithub /></a>
                         <a style={{'--color-':'#0077b5'}} href="https://www.linkedin.com/in/mit-amipara-8235852a5" target="_blank"><FaLinkedin /></a>
