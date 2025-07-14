@@ -22,7 +22,7 @@ function Education() {
                 <div className="education-item">
                     <h3>Apollo Internationl School  <p className="a">Visavadar</p></h3>
                     <p className="education-details">SSC Board</p>
-                    <p className="education-details">2019 - 2020</p>
+                    <p className="education-details">2018 - 2029</p>
                     <p className="education-description"> Complete My Secondary Education with secure 71.89% in 10th Board Exam.</p>
                 </div>
             </div>
