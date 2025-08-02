@@ -9,7 +9,7 @@ function Education() {
                     <h3>Silver Oak University  <p className="a">Ahmedabad</p>  </h3>
                     <p className="education-details">B.TECH - IT</p>
                     <p className="education-details">2021 - 2025</p>
-                    <p className="education-description">  Currently Pursuing Bechlor degree At Silver Oak University.</p>
+                    <p className="education-description">  Complete My Bechlor degree At Silver Oak University with 7.38 CGPA.</p>
                 </div>
                 
                 <div className="education-item">

@@ -9,6 +9,7 @@ function Contact() {
         message: ""
     });
     const [errors, setErrors] = useState({});
+    const [isSubmit, setIsSubmit] = useState(false);
 
     const validateForm = () => {
         let errors = {};
@@ -32,6 +33,7 @@ function Contact() {
         }
 
         setErrors(errors);
+        !isValid ? setIsSubmit(true) : setIsSubmit(false);
         return isValid;
     };
 
@@ -43,6 +45,7 @@ function Contact() {
 
     const onSubmit = async (event) => {
         event.preventDefault();
+        setIsSubmit(true);
 
         if (!validateForm()) {
             Swal.fire({
@@ -69,7 +72,7 @@ function Contact() {
             },
             body: json
             }).then((res) => res.json());
-        
+            
             if (res.success) {
                 Swal.fire({
                     position: "center",
@@ -82,6 +85,7 @@ function Contact() {
 
                 setFormData({ name: "", email: "", message: "" });
                 setErrors({});
+                setIsSubmit(false);
 
                 event.target.reset();
 
@@ -91,6 +95,7 @@ function Contact() {
                     title: "Failed...",
                     text: "Something went wrong!, Try again...",
                 });
+                setIsSubmit(false);
             }
         } catch (error) {
             Swal.fire({
@@ -99,6 +104,7 @@ function Contact() {
                 text: "Something went wrong!",
             });
             console.log(error);
+            setIsSubmit(false);
         }
     };
 
@@ -126,7 +132,7 @@ function Contact() {
                 </div>
                 
                 <br /><br />
-                <button type="submit" className="btn">Send Message</button>
+                {!isSubmit && <button type="submit" className="btn" >Send Message</button>}
             </form>
             </div>
         </section>
