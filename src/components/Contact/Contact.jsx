@@ -9,7 +9,7 @@ function Contact() {
         message: ""
     });
     const [errors, setErrors] = useState({});
-    const [isSubmit, setIsSubmit] = useState(false);
+    const [isSubmit, setIsSubmit] = useState(true);
 
     const validateForm = () => {
         let errors = {};
@@ -45,8 +45,7 @@ function Contact() {
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        setIsSubmit(true);
-
+        
         if (!validateForm()) {
             Swal.fire({
                 icon: "error",
@@ -57,6 +56,7 @@ function Contact() {
         }
         try {
             
+            setIsSubmit(true)
             const formData = new FormData(event.target);
             
             formData.append("access_key", "3df8c26d-1e8b-4ad5-ab99-71cee00f7174");
@@ -85,7 +85,7 @@ function Contact() {
 
                 setFormData({ name: "", email: "", message: "" });
                 setErrors({});
-                setIsSubmit(false);
+                setIsSubmit(true);
 
                 event.target.reset();
 
